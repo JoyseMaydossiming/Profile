@@ -2,18 +2,12 @@
 <html>
 <head>
 	<title>Profil Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style-ku.css">
-	<style>
-		#arkademy-class{
-			height: 150px;
-			width: 150px;
-		}
-	</style>
 </head>
 <body>
 	<nav>
-		<div class="menu mobile">
-		<a href="#">Menu</a>
+		<div class="menu mobile"><a href="#">Menu</a>
 		</div>
 	<ul>
 		<li><a href="#">HOME</a></li>
@@ -46,18 +40,22 @@
 				<p class="field">Location</p>
 				<p class="text-gray">Cilacap, Indonesia</p>
 			</div>
-			<div class="data" style="z-index: 999; position: relative;">
+			<div class="data">
 				<p class="field">Years Experience</p>
 				<p class="text-gray">1</p>
 			</div>
-			<div class="data" style="z-index: 999; position: relative;">
-				<p class="field">Ema il</p>
+			<div class="data">
+				<p class="field">Email</p>
 				<p class="text-gray">josye.madyosiming123@gmail.com</p>
 			</div>
 		</div>
 	</section>
 	<section id="input-form">
 		<form method="#" action="#">
+			<div class="form">
+			<label >Upload Picture</label>
+			<input type="file" name="pic">
+	 		</div>
 			<div class="form">
 			<label >Name</label>
 			<input type="text" name="name">
@@ -72,11 +70,11 @@
 			</div>
 			<div class="form">
 			<label >Age</label>
-			<input type="nuber" name="age">
+			<input type="number" name="age">
 			</div>
 			<div class="form">
 			<label >Location</label>
-			<input type="text" name="location">
+			<textarea></textarea>
 			</div>
 			<div class="form">
 			<label >Years Experience</label>
@@ -87,7 +85,17 @@
 			<input type="email" name="email">
 			</div>
 			<div class="form">
-			<input type="submit" name="submit" value="SUBMIT" class="bg-blue">
+				<label>Religion</label>
+				<select type= "text" name="Religion">
+					<option>Moeslim</option>
+					<option>Christian</option>
+					<option>Buddha</option>
+					<option>Hindu</option>
+				</select>
+				
+			</div>
+			<div class="form">
+			<input type="submit" name="submit" id="add" value="SUBMIT" class="bg-blue">
 			</div>
 		</form>
 	</section>
